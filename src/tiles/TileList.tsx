@@ -3,9 +3,6 @@ import { Tile } from "./Tile";
 import { tileList } from "./model";
 import "./Tile.css";
 
-const thumbnailPlaceholder =
-  "https://www.svgrepo.com/show/508699/landscape-placeholder.svg";
-
 export const TileList = () => {
   const [tiles, setTiles] = useState(tileList);
 
@@ -43,11 +40,5 @@ export const TileList = () => {
     setTiles(array);
   }
 
-  return (
-    <div className="tilelist">
-      {tiles.flatMap((tileInfo) => (
-        <Tile key={tileInfo.id} {...tileInfo} install={install} />
-      ))}
-    </div>
-  );
+  return <div className="tilelist">{/* WRITE YOUR CODE HERE */}</div>;
 };
